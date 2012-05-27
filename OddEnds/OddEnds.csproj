@@ -44,10 +44,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\Abstractions\IAsyncUnitOfWork.cs" />
     <Compile Include="DataAccess\Abstractions\IEntity.cs" />
-    <Compile Include="DataAccess\Abstractions\IRepository.cs" />
+    <Compile Include="DataAccess\Abstractions\IAsyncRepository.cs" />
     <Compile Include="DataAccess\EntityBase.cs" />
-    <Compile Include="DataAccess\EntityFramework\AsyncEntityFrameworkRepository.cs" />
+    <Compile Include="DataAccess\EntityFramework\EntityFrameworkAsyncRepository.cs" />
+    <Compile Include="DataAccess\EntityFramework\EntityFrameworkAsyncUnitOfWork.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
